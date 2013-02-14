@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<strong>
+		Please fill in the following items, Thanks! - Jimmy.
+	</strong>
+</head>
+
+<body>
+
+<!--This is where you type in your address 1 and click submit-->
+
+<form name="address1" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+Address Line 1: <input type="text" name="address1">
+<input type="submit" value="Submit">
+</form>
+
+<!-- This is where you type in your address 2 and click submit-->
+
+<form name="address2" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+Address Line 2: <input type="text" name="address2">
+<input type="submit" value="Submit">
+</form>
+
+</body>
+
+<script>
+function validateForm()
+{
+var x=document.forms["address1"]["address1"].value;
+if (x==null || x=="")
+  {
+  alert("Address line 1 must be filled out!");
+  return false;
+  }
+}
+</script>
+
+
+</html>
+
+
+
